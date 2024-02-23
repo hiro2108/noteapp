@@ -12,14 +12,17 @@ function App() {
     localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes])
 
-  useEffect(()=>{
-    setActiveNote(notes[0].id);
-  },[]);
+  useEffect(() => {
+    if (notes.length > 0) {
+      setActiveNote(notes[0].id);
+    }
+  }, []);
+
 
   const onAddNote = () => {
     const newNote = {
       id: uuid(),
-      title: "new note",
+      title: "新しいノート",
       content: "",
       date: Date.now(),
     };
