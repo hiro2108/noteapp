@@ -11,7 +11,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
     });
   }
   if (!activeNote) {
-    return <div className="noActiveNote">it is not choiced note</div>
+    return <div className="noActiveNote">ノートが選択されていません。</div>
   }
   return (
     <main className="app-main">

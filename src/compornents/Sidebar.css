@@ -36,11 +36,11 @@ button{
     margin: 10px 0;
 }
 .app-sidebar-note small{
-    color: #999;
+    color: #2c2c2c;
 }
 .app-sidebar-note:hover{
-    background-color: #cccccc;
+    background-color: #81b937;
 }
 .app-sidebar-note.active{
-    background-color: #cccccc;
+    background-color: #81b937;
 }
